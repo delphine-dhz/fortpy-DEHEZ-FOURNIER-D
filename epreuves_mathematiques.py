@@ -1,5 +1,5 @@
 # EPREUVE MATH 1 : NOMBRE PREMIER LE PLUS PROCHE
-
+print("Bienvenue sur l'épreuve de mathematiques")
 def est_premier (n) :
     premier = True
     i = 2
@@ -20,8 +20,8 @@ def premier_plus_proche(n) :
 import random
 def epreuve_math_premier() :
     n = random.randint(10, 20)
-    print ("Épreuve de Mathématiques: Trouver le nombre premier le plus proche de",n )
-    rep = int(input("saisir votre réponse"))
+    print (" Trouver le nombre premier le plus proche de",n )
+    rep = int(input("saisir votre réponse :"))
     print("Votre réponse :",rep)
     bonnerep = premier_plus_proche(n)
     if rep == bonnerep :
@@ -69,8 +69,22 @@ def epreuve_roulette_mathematique() :
     else :
         return False
 
+#SELECTION DE L'EPREUVE
 
-if __name__ == '__main__' :
+def epreuve_math() :
+    epreuves = [epreuve_math_premier,epreuve_roulette_mathematique,epreuve_math_equation]
+    epreuve = random.choice(epreuves)
+    return epreuve
+
+jeu= epreuve_math()
+if jeu() == True :
+    print("Bonne réponse! Vous gagnez une clé. ")
+else :
+    print("Mauvaise réponse! Vous ne gagnez pas une clé. ")
+
+
+
+#if __name__ == '__main__' :
 #TEST MATH 1
     #epreuve_math_premier()
 #TEST MATH 2
