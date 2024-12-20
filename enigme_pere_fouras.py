@@ -5,6 +5,7 @@ def question_pf(fichier):
     with open(fichier, "r",encoding="utf-8") as f:
         contenu = json.load(f)
     choix = random.choice(contenu)
+    print("Bienvenue dans l'epreuve des enigmes du Père Fouras")
     question, reponse = choix["question"], choix["reponse"]
     print(question)
     essai = 3
