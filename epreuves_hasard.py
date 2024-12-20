@@ -30,9 +30,38 @@ def bonneteau() :
         i = i - 1
     return valide
 
-bonneteau()
+#bonneteau()
 
-#E
+#EPREUVE HASARD 2 : LANCER DE DES
+
+def jeu_lance_des() :
+    print("Bienvenue sur l'épreuve de hasard")
+    valide = False
+    trouver6 = False
+    i = 3
+    while trouver6 == False and i>=1 :
+        print("Vous avez",i," essai(s)")
+        input("Lancer les dès en appuyant sur entrée")
+        des_joueur = (random.randint(1, 6), random.randint(1, 6))
+        print ("le joueur a obtenu :",des_joueur)
+        des_maitre = (random.randint(1, 6), random.randint(1, 6))
+        print ("le maitre a obtenu :",des_maitre)
+        if 6 in des_joueur :
+            print("Bravo vous remportez la partie ,vous avez gagné une clé !")
+            trouver6 = True
+            valide = True
+        elif 6 in des_maitre :
+            print("Perdu, le maitre du jeu remporte la partie")
+            trouver6 = True
+        elif i>1 :
+           print ("Passons au prochain essai")
+        i = i - 1
+    return valide
+    if valide == False :
+        print("Aucun joueur n'a obtenu 6\n Match nul")
+jeu_lance_des()
+
+
 
 
 
