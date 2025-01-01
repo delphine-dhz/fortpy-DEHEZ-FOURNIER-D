@@ -6,6 +6,8 @@ def bonneteau() :
     print("Bienvenue sur l'épreuve de hasard")
     btx = ['A','B','C']
     print("Epreuve des bonneteaux : deviner sous lequel des 3 bonneteaux se trouve la clef, vous disposez de 2 essais")
+    print("C'est parti, bonne chance")
+    print("Premier essai")
     print ("Voici les bonneteaux : A , B , C")
     valide = False
     i = 2
@@ -29,6 +31,8 @@ def bonneteau() :
             print("Votre choix ne fait pas parti des propositions")
         i = i - 1
     return valide
+    if valide == False :
+        print ("Incorrect! Vous ne gagnez pas une clé. ")
 
 #bonneteau()
 
@@ -36,6 +40,9 @@ def bonneteau() :
 
 def jeu_lance_des() :
     print("Bienvenue sur l'épreuve de hasard")
+    print ("Le premier joueur qui obtient un 6 gagne.")
+    print("C'est parti, bonne chance")
+
     valide = False
     trouver6 = False
     i = 3
@@ -57,9 +64,24 @@ def jeu_lance_des() :
            print ("Passons au prochain essai")
         i = i - 1
     return valide
+
     if valide == False :
         print("Aucun joueur n'a obtenu 6\n Match nul")
-jeu_lance_des()
+
+#jeu_lance_des()
+
+def epreuve_hasard() :
+    epreuves = [bonneteau, jeu_lance_des]
+    epreuve = random.choice(epreuves)
+
+    if epreuve == jeu_lance_des :
+     return jeu_lance_des ()
+    if epreuve == bonneteau :
+        return bonneteau()
+
+epreuve_hasard()
+
+
 
 
 
