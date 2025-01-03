@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d4783bc-511f-4329-9ccb-b7a9c82e006e" name="Changes" comment="jeu de nim">
-      <change beforePath="$PROJECT_DIR$/enigme_pere_fouras.py" beforeDir="false" afterPath="$PROJECT_DIR$/enigme_pere_fouras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epreuve_finale.py" beforeDir="false" afterPath="$PROJECT_DIR$/epreuve_finale.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epreuves_logiques.py" beforeDir="false" afterPath="$PROJECT_DIR$/epreuves_logiques.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonctions_utiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonctions_utiles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epreuves_hasard.py" beforeDir="false" afterPath="$PROJECT_DIR$/epreuves_hasard.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

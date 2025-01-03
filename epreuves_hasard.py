@@ -32,7 +32,7 @@ def bonneteau() :
         i = i - 1
     return valide
     if valide == False :
-        print ("Incorrect! Vous ne gagnez pas une clé. ")
+        print("Incorrect! Vous ne gagnez pas une clé. ")
 
 #bonneteau()
 
