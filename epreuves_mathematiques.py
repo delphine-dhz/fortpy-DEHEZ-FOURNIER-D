@@ -13,14 +13,15 @@ def premier_plus_proche(n) :
     i = n
     if est_premier(n) == False :
         while est_premier(i) == False and i <= 23 :
-            est_premier(i)
             i = i + 1
     return i
 
 import random
 def epreuve_math_premier() :
+    print("C'est parti, bonne chance")
+    valide = bool
     n = random.randint(10, 20)
-    print (" Trouver le nombre premier le plus proche de",n )
+    print (" Trouver le nombre premier le plus proche et supérieur ou égal à",n)
     rep = int(input("saisir votre réponse :"))
     print("Votre réponse :",rep)
     bonnerep = premier_plus_proche(n)
@@ -37,17 +38,18 @@ def resoudre_equation_lineaire() :
     return a,b,x
 
 def epreuve_math_equation() :
+    print("C'est parti, bonne chance")
     a,b,x = resoudre_equation_lineaire()
     print("Épreuve de Mathématiques: Résoudre l'équation",a,"x +",b," = 0.")
     rep = float(input("Saisir le resultat de cette equation :"))
-    print("Quelle est la valeur de x:",rep )
     if rep == x :
-        return True
+        print ("Correct! Vous gagnez une clé.")
     else :
-        return False
+        print ("Incorrect! Vous ne gagnez pas une clé. ")
 
 #EPREUVE MATH 3 : ROULETTE MATHEMATIQUE
 def epreuve_roulette_mathematique() :
+    print("C'est parti, bonne chance")
     roulette = [random.randint(1, 20) for _ in range(5)]
     operations = ['addition', 'soustraction','multiplication' ]
     op = random.choice(operations)
@@ -65,22 +67,25 @@ def epreuve_roulette_mathematique() :
     rep = int(input(f"Calculez le résultat en combinant ces nombres avec une {op} :"))
     print ("Votre réponse :",rep)
     if res == rep :
-        return True
+        print ("Correct! Vous gagnez une clé.")
     else :
-        return False
+        print ("Incorrect! Vous ne gagnez pas une clé. ")
 
 #SELECTION DE L'EPREUVE
 
 def epreuve_math() :
     epreuves = [epreuve_math_premier,epreuve_roulette_mathematique,epreuve_math_equation]
     epreuve = random.choice(epreuves)
-    return epreuve
+    if epreuve == epreuve_math_premier :
+        return epreuve_math_premier ()
+    if epreuve == epreuve_roulette_mathematique :
+        return epreuve_roulette_mathematique()
+    if epreuve == epreuve_math_equation :
+        return epreuve_math_equation()
 
-jeu= epreuve_math()
-if jeu() == True :
-    print("Bonne réponse! Vous gagnez une clé. ")
-else :
-    print("Mauvaise réponse! Vous ne gagnez pas une clé. ")
+epreuve_math()
+
+
 
 
 
