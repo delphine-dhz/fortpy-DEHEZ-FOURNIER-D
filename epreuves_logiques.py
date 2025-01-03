@@ -34,5 +34,5 @@ def jeu_nim_contre_ordi():
         else :
             baton = retrait_ordi(baton)
         joueur = echange_joueur(joueur)
-    return  joueur, "a gagné"
+    return  joueur, "a gagné, vous avez gagné une clé"
 print(jeu_nim_contre_ordi())
