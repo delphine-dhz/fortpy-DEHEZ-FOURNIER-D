@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d4783bc-511f-4329-9ccb-b7a9c82e006e" name="Changes" comment="jeu de nim">
-      <change beforePath="$PROJECT_DIR$/epreuves_hasard.py" beforeDir="false" afterPath="$PROJECT_DIR$/epreuves_hasard.py" afterDir="false" />
+    <list default="true" id="18674039-92bf-48d4-b714-45e068dfecb2" name="Changes" comment="version Finale du Projet">
+      <change beforePath="$PROJECT_DIR$/output/historique.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/historique.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,24 +20,29 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="work" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;aurelia-f&quot;
+    &quot;assignee&quot;: &quot;delphine-dhz&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/delphine-dhz/fortpy-DEHEZ-FOURNIER-D.git&quot;,
-    &quot;accountId&quot;: &quot;ef938ff8-c1a3-4d81-b136-b378a65cb770&quot;
+    &quot;accountId&quot;: &quot;e114b22d-29e5-4aca-8619-db069b36f54c&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2qLCnnajWexj6cKvFLvjRP46awL" />
+  <component name="ProjectId" id="2pnbWfe3Woq9Df1HJmCOgCIUOYR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,87 +50,200 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.enigme_pere_fouras.executor&quot;: &quot;Run&quot;,
+    &quot;Python.epreuve_finale.executor&quot;: &quot;Run&quot;,
+    &quot;Python.epreuves_hasard.executor&quot;: &quot;Run&quot;,
     &quot;Python.epreuves_logiques.executor&quot;: &quot;Run&quot;,
+    &quot;Python.epreuves_mathematiques.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fonctions_utiles.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/OneDrive - Efrei/Documents/Projet python/fortpy-DEHEZ-FOURNIER-D&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\OneDrive - Efrei\Documents\Projet python\fortpy-DEHEZ-FOURNIER-D\DATA" />
-    </key>
+  <component name="RunManager">
+    <configuration name="epreuves_mathematiques" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fortpy-DEHEZ-FOURNIER-D" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/epreuves_mathematiques.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.epreuves_mathematiques" />
+        <item itemvalue="Python.epreuves_mathematiques" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PY-243.21565.199" />
+        <option value="bundled-python-sdk-cab1f2013843-4ae2d6a61b08-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.21565.199" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2d4783bc-511f-4329-9ccb-b7a9c82e006e" name="Changes" comment="" />
-      <created>1734432637704</created>
+      <changelist id="18674039-92bf-48d4-b714-45e068dfecb2" name="Changes" comment="" />
+      <created>1733404820972</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1734432637704</updated>
+      <updated>1733404820972</updated>
+      <workItem from="1733404822539" duration="16670000" />
+      <workItem from="1733479212327" duration="3779000" />
+      <workItem from="1734431987853" duration="16922000" />
+      <workItem from="1734691430657" duration="40319000" />
     </task>
-    <task id="LOCAL-00001" summary="jeu de nim">
+    <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
-      <created>1734620612344</created>
+      <created>1733404956491</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1734620612344</updated>
+      <updated>1733404956491</updated>
     </task>
-    <task id="LOCAL-00002" summary="jeu de nim">
+    <task id="LOCAL-00002" summary="first commit test 2">
       <option name="closed" value="true" />
-      <created>1734732648620</created>
+      <created>1733405123901</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1734732648620</updated>
+      <updated>1733405123901</updated>
     </task>
-    <task id="LOCAL-00003" summary="jeu de nim">
+    <task id="LOCAL-00003" summary="epreuve math v1">
       <option name="closed" value="true" />
-      <created>1734733005162</created>
+      <created>1734432077794</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1734733005162</updated>
+      <updated>1734432077794</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="epreuve math et hasard">
+      <option name="closed" value="true" />
+      <created>1734620821670</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734620821670</updated>
+    </task>
+    <task id="LOCAL-00005" summary="epreuve math et hasardV2">
+      <option name="closed" value="true" />
+      <created>1734691494675</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734691494675</updated>
+    </task>
+    <task id="LOCAL-00006" summary="epreuves math hasard Vfinale">
+      <option name="closed" value="true" />
+      <created>1735768582306</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735768582306</updated>
+    </task>
+    <task id="LOCAL-00007" summary="version Finale du Projet">
+      <option name="closed" value="true" />
+      <created>1736026679496</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736026679496</updated>
+    </task>
+    <task id="LOCAL-00008" summary="version Finale du Projet">
+      <option name="closed" value="true" />
+      <created>1736027244021</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736027244021</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="jeu de nim" />
-    <option name="LAST_COMMIT_MESSAGE" value="jeu de nim" />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="first commit test 2" />
+    <MESSAGE value="epreuve math v1" />
+    <MESSAGE value="epreuve math et hasard" />
+    <MESSAGE value="epreuve math et hasardV2" />
+    <MESSAGE value="epreuves math hasard Vfinale" />
+    <MESSAGE value="version Finale du Projet" />
+    <option name="LAST_COMMIT_MESSAGE" value="version Finale du Projet" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/enigme_pere_fouras.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/fortpy_DEHEZ_FOURNIER_D$epreuves_mathematiques.coverage" NAME="epreuves_mathematiques Coverage Results" MODIFIED="1736010894552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fortpy_DEHEZ_FOURNIER_D$main.coverage" NAME="main Coverage Results" MODIFIED="1736027367288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fortpy_DEHEZ_FOURNIER_D$fonctions_utiles.coverage" NAME="fonctions_utiles Coverage Results" MODIFIED="1736012618892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fortpy_DEHEZ_FOURNIER_D$epreuves_logiques.coverage" NAME="epreuves_logiques Coverage Results" MODIFIED="1736013321431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fortpy_DEHEZ_FOURNIER_D$epreuve_finale.coverage" NAME="epreuve_finale Coverage Results" MODIFIED="1736015591600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fortpy_DEHEZ_FOURNIER_D$epreuves_hasard.coverage" NAME="epreuves_hasard Coverage Results" MODIFIED="1735766562173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fortpy_DEHEZ_FOURNIER_D$enigme_pere_fouras.coverage" NAME="enigme_pere_fouras Coverage Results" MODIFIED="1735942173776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

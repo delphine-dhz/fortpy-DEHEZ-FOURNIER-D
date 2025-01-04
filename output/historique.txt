@@ -1,6 +1,6 @@
-DD;1;True;1
-AA;2;True;2
-DD;3;False;2
-DD;3;False;2
+AA;1;False;0
+BB;2;False;0
+AA;3;True;1
+BB;3;True;2
 AA;4;True;3
-DD;salle de tresor;True;3
+AA;salle de tresor;False;3
