@@ -1,23 +1,23 @@
 import random
 import json
-
-def question_pf(fichier):
+def charger_enigme(fichier):
     with open(fichier, "r",encoding="utf-8") as f:
         contenu = json.load(f)
-    choix = random.choice(contenu)
+    return contenu
+
+def enigme_pere_fouras():
     print("Bienvenue dans l'epreuve des enigmes du Père Fouras")
-    question, reponse = choix["question"], choix["reponse"]
-    print(question)
-    essai = 3
-    rep = input(f"Vous avez {essai} essai(s).\nVotre réponse est : ")
-    while rep.lower() != reponse.lower() and essai != 0 :
+    enigmes = charger_enigme("DATA/enigmesPF.json")
+    enigme = random.choice(enigmes)
+    essai =3
+    print(enigme["question"])
+    rep =""
+    while essai > 0 and rep.lower() != enigme["reponse"].lower():
+        rep = input(f"Vous avez {essai} essai(s).\nVotre réponse est : ")
         essai -= 1
-        rep = input(f"Vous avez plus que {essai} essai(s).Votre réponse est : ")
-    if rep.lower() == reponse.lower():
-        return "Bravo vous avez reussis!"
-    else :
-        return "Vous n'avez pas reussi l'epreuve."
-
-path = "data/enigmesPF.json"
-
-print(question_pf(path))
+    if rep.lower() == enigme["reponse"].lower():
+        print("🎉 Bravo vous avez reussis! Vous gagnez une 🔑! 🎉")
+        return True
+    else:
+        print("Vous n'avez pas reussi l'epreuve, Vous ne gagnez pas de 🔑. 😔")
+    return False

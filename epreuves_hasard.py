@@ -20,21 +20,19 @@ def bonneteau() :
 
         if choix_joueur_maj in btx :
             if choix_joueur_maj == reponse :
-                print("Bonne réponse ! Vous gagnez la clé ")
+                print("🎉 Bonne réponse ! Vous gagnez la clé 🎉 ")
                 valide = True
             else :
                 if i==1:
-                    print("Vous avez perdu l'épreuve, la clé se trouvait sous le bonneteau",reponse)
+                    print("Vous avez perdu l'épreuve, la 🔑 se trouvait sous le bonneteau",reponse,"😔")
                 else:
                     print("Mauvaise réponse !Il vous reste",i-1,"tentative" )
         else :
             print("Votre choix ne fait pas parti des propositions")
         i = i - 1
-    return valide
     if valide == False :
-        print ("Incorrect! Vous ne gagnez pas une clé. ")
-
-#bonneteau()
+        print ("Incorrect! Vous ne gagnez pas une clé.😔 ")
+    return valide
 
 #EPREUVE HASARD 2 : LANCER DE DES
 
@@ -54,21 +52,18 @@ def jeu_lance_des() :
         des_maitre = (random.randint(1, 6), random.randint(1, 6))
         print ("le maitre a obtenu :",des_maitre)
         if 6 in des_joueur :
-            print("Bravo vous remportez la partie ,vous avez gagné une clé !")
+            print("🎉 Bravo vous remportez la partie ,vous avez gagné une 🔑 ! 🎉")
             trouver6 = True
             valide = True
         elif 6 in des_maitre :
-            print("Perdu, le maitre du jeu remporte la partie")
+            print("Perdu, le maitre du jeu remporte la partie, vous ne gagnez pas de 🔑 😔")
             trouver6 = True
         elif i>1 :
            print ("Passons au prochain essai")
         i = i - 1
-    return valide
-
     if valide == False :
         print("Aucun joueur n'a obtenu 6\n Match nul")
-
-#jeu_lance_des()
+    return valide
 
 def epreuve_hasard() :
     epreuves = [bonneteau, jeu_lance_des]
@@ -79,7 +74,6 @@ def epreuve_hasard() :
     if epreuve == bonneteau :
         return bonneteau()
 
-epreuve_hasard()
 
 
 
