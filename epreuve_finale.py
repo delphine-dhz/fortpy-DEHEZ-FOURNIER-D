@@ -1,5 +1,13 @@
+#FORT BOYARD SIMULATOR : fortpy-DEHEZ-FOURNIER-D
+#DEHEZ Delphine / FOURNIER Aurélia
+# Ce fichier comporte l'épreuve finale, la salle du trésor représente la dernière étape du jeu où l'équipe après avoir collecté les 3 clés, doit déchiffrer une énigme nécessaire pour ouvrir la porte et accéder au trésor
 import random
 import json
+
+#retourne un booléen indiquant si l'équipe a trouvé la réponse à l'énigme
+#si le joueur a réussi l'épreuve il gagne le jeu, sinon s'il perd l'épreuve il perd le jeu
+#l'énigme est choisi dans un fichier au format json
+#3 indices sont proposés, le joueur à 3 essais pour trouver et pour chaque nouveau essais le joueur obtient un nouveau indice
 
 def salle_de_tresor():
     fichier = "DATA/indicesSalle.json"

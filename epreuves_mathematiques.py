@@ -1,7 +1,13 @@
+#FORT BOYARD SIMULATOR : fortpy-DEHEZ-FOURNIER-D
+#DEHEZ Delphine / FOURNIER Aurélia
+# Ce fichier comporte les épreuves de mathématiques : premier le plus proche, équation linéaire et roulette mathématique
+# La fonction finale epreuve_math chosi une épreuve aléatoirement parmi ces 3 épreuves
 
-
-from fonctions_utiles   import isEntier,isDecimal
+import random
+from fonctions_utiles   import estEntier,estDecimal
 # EPREUVE MATH 1 : NOMBRE PREMIER LE PLUS PROCHE
+#fonction retournant un booléen si la valeur en paramètre est un nombre premier
+#paramètre : n : entier
 def est_premier (n) :
     premier = True
     i = 2
@@ -11,6 +17,8 @@ def est_premier (n) :
         premier = False
     return premier
 
+#fonction retournant un entier représentant le nombre premier >= à la valeur en paramètre
+#paramètre : n : entier
 def premier_plus_proche(n) :
     i = n
     if est_premier(n) == False :
@@ -18,7 +26,8 @@ def premier_plus_proche(n) :
             i = i + 1
     return i
 
-import random
+#retourne un booléen indiquant si le joueur a trouvé le nombre premier le plus proche d'un nombre pris au hasard entre 10 et 20
+#si le joueur a réussi l'épreuve il gagne une clef, sinon s'il perd l'épreuve il ne gagne pas de clef
 def epreuve_math_premier() :
     print("C'est parti, bonne chance")
     valide = bool
@@ -27,7 +36,7 @@ def epreuve_math_premier() :
     test = False
     while test==False :
         str = input("saisir votre réponse :")
-        if isEntier(str):
+        if estEntier(str):
             test=True
             rep=int(str)
     print("Votre réponse :",rep)
@@ -38,13 +47,18 @@ def epreuve_math_premier() :
     else :
         print ("Incorrect! Vous ne gagnez pas une 🔑. 😔 ")
     return False
+
 #EPREUVE MATH 2 : RESOUDRE EQUATION LINEAIRE
+#retourne les composants a,b,x d'une équation du type ax+b=0
+#choix de a et b au hasard entre 1 et 10
 def resoudre_equation_lineaire() :
     a = random.randint(1,10)
     b = random.randint(1,10)
     x = -b/a
     return a,b,x
 
+#retourne un booléen indiquant si le joueur a pu résoudre une equation du type ax+b=0
+#si le joueur a réussi l'épreuve il gagne une clef, sinon s'il perd l'épreuve il ne gagne pas de clef
 def epreuve_math_equation() :
     print("C'est parti, bonne chance")
     a,b,x = resoudre_equation_lineaire()
@@ -52,7 +66,7 @@ def epreuve_math_equation() :
     test=False
     while test==False :
         str =input("Saisir le resultat de cette equation :")
-        if isDecimal(str):
+        if estDecimal(str):
             test=True
             rep = float(str)
     if rep == x :
@@ -61,7 +75,12 @@ def epreuve_math_equation() :
     else :
         print ("Incorrect! Vous ne gagnez pas une 🔑.😔")
     return False
+
 #EPREUVE MATH 3 : ROULETTE MATHEMATIQUE
+#retourne un booléen indiquant si le joueur a pu résoudre la suite d'opérations sur une liste de valeur
+#création d'une liste de 5 entiers au hasard entre 1 et 20
+#choix d'une opération entre 'addition', 'soustraction','multiplication'
+#si le joueur a réussi l'épreuve il gagne une clef, sinon s'il perd l'épreuve il ne gagne pas de clef
 def epreuve_roulette_mathematique() :
     print("C'est parti, bonne chance")
     roulette = [random.randint(1, 20) for _ in range(5)]
@@ -81,7 +100,7 @@ def epreuve_roulette_mathematique() :
     test = False
     while test==False :
         str = input(f"Calculez le résultat en combinant ces nombres avec une {op} :")
-        if isDecimal(str):
+        if estDecimal(str):
             test = True
             rep = float(str)
     print ("Votre réponse :",rep)
@@ -91,8 +110,10 @@ def epreuve_roulette_mathematique() :
     else :
         print ("Incorrect! Vous ne gagnez pas une 🔑. 😔")
     return False
-#SELECTION DE L'EPREUVE
 
+#SELECTION DE L'EPREUVE
+#retourne un booléen qui est le résultat d'une des fonctions mathématiques
+#choix au hasard de la fonction parmi [epreuve_math_premier, epreuve_roulette_mathematique, epreuve_math_equation]
 def epreuve_math() :
     print("Bienvenue sur l'épreuve de mathematiques")
     epreuves = [epreuve_math_premier,epreuve_roulette_mathematique,epreuve_math_equation]

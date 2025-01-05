@@ -1,7 +1,14 @@
-#EPREUVE HASARD : BONNETEAU
-
+#FORT BOYARD SIMULATOR : fortpy-DEHEZ-FOURNIER-D
+#DEHEZ Delphine / FOURNIER Aurélia
+# Ce fichier comporte les épreuves de hasard : bonneteau et lancés de dés
+# La fonction finale epreuve_hasard chosie une épreuve aléatoirement parmi ces 3 épreuves
 import random
 
+#EPREUVE HASARD : BONNETEAU
+
+#retourne un booléen indiquant si le joueur a trouvé la clef
+#si le joueur a réussi l'épreuve il gagne une clef, sinon s'il perd l'épreuve il ne gagne pas de clef
+#le joueur dispose de 2 essais
 def bonneteau() :
     print("Bienvenue sur l'épreuve de hasard")
     btx = ['A','B','C']
@@ -35,7 +42,8 @@ def bonneteau() :
     return valide
 
 #EPREUVE HASARD 2 : LANCER DE DES
-
+#retourne un booléen indiquant si le joueur a réussi à avoir un 6 sur 3 essais
+#si le joueur a réussi l'épreuve il gagne une clef, sinon s'il perd l'épreuve il ne gagne pas de clef
 def jeu_lance_des() :
     print("Bienvenue sur l'épreuve de hasard")
     print ("Le premier joueur qui obtient un 6 gagne.")
@@ -65,6 +73,8 @@ def jeu_lance_des() :
         print("Aucun joueur n'a obtenu 6\n Match nul")
     return valide
 
+#Retourne un booléen
+#appel une des 2 épreuves au hasard
 def epreuve_hasard() :
     epreuves = [bonneteau, jeu_lance_des]
     epreuve = random.choice(epreuves)
@@ -73,9 +83,6 @@ def epreuve_hasard() :
      return jeu_lance_des ()
     if epreuve == bonneteau :
         return bonneteau()
-
-
-
 
 
 

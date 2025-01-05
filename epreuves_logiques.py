@@ -1,16 +1,31 @@
+#FORT BOYARD SIMULATOR : fortpy-DEHEZ-FOURNIER-D
+#DEHEZ Delphine / FOURNIER Aurélia
+# Ce fichier comporte l'épreuve de logique : bataille naval
+
+
 import winsound
 import random
-from fonctions_utiles import isEntier
+from fonctions_utiles import estEntier
+
+#retourne l'indice du joueur suivant
+#Paramètre : joueur : indice du joueur en cours
+# 0 : Joueur
+# 1 : Maitre du jeu
 def suiv(joueur):
     if joueur == 0:
         return 1
     return 0
 
+#retourne une grille de 3x3 initialisé à ' '
 def grille_vide():
     size = 3
     grille=[[' ' for i in range(size)] for j in range(size)]
     return grille
 
+#affiche une grille de 3x3 et un message
+#parametre :
+#grille : Tableau de 3x3
+#message : Chaine de caractères à afficher
 def affiche_grille(grille, message) :
     print(message)
     ligne=''
@@ -21,6 +36,8 @@ def affiche_grille(grille, message) :
         print(ligne)
     print('-------')
 
+#retourne les coordonnées saisient par le joueur sour la forme Ligne, colonne
+#La saisie doit être entre 1 et 3
 def demande_position() :
     test = False
     while not test:
@@ -29,9 +46,9 @@ def demande_position() :
         coord = input("Entrez la position (ligne,colonne) entre 1 et 3 (ex: 1,2) :")
         val = coord.split(',')
         if len(val) == 2 :
-            if isEntier(val[0]) :
+            if estEntier(val[0]) :
                 a=int(val[0])-1
-            if isEntier(val[1]) :
+            if estEntier(val[1]) :
                 b=int(val[1])-1
             if (a >= 0) and (a < 3) and (b >= 0) and (b < 3):
                 test = True
@@ -39,6 +56,8 @@ def demande_position() :
             print("hors limite, ressaisir les coordonnées")
     return a,b
 
+#initialise dans une grille 3x3 l'emplacement de 2 bateaux
+#les coordonnées des bateaux sont saisis par le joueur
 def init():
     print("positionnez vos bateaux :")
     grille = grille_vide()
@@ -54,6 +73,8 @@ def init():
                 grille[a][b] = '⛵'
     return grille
 
+#initialise dans une grille 3x3 l'emplacement de 2 bateaux
+#les coordonnées des bateaux sont définies au hasard
 def init_aleatoire():
     grille = grille_vide()
     for i in range(2) :
@@ -66,6 +87,11 @@ def init_aleatoire():
                 grille[a][b] = '⛵'
     return grille
 
+#gère le tout d'un jeu
+#paramètre :
+#joueur : entier représentant l'indice du joueur
+#grille_tirs : grille représentant l'historique des tirs
+#grille_adversaire : grille représentant les positions des bateaux de l'adversaire
 def tour(joueur, grille_tirs,grille_adversaire) :
     if (joueur == 0) :
         print("C'est à votre tour de faire feu !:")
@@ -91,6 +117,9 @@ def tour(joueur, grille_tirs,grille_adversaire) :
         print("Dans l'eau...")
         grille_tirs[a][b] = '🌊'
 
+#retourne un booleen inidiquant si les bateaux de la grille sont tous coulés
+#paramètre :
+#grille_tirs_joueur : grille représentant l'historique des tirs
 def gagne(grille_tirs_joueur) :
     nb=0
     for i in range(3) :
@@ -99,6 +128,12 @@ def gagne(grille_tirs_joueur) :
                 nb+=1
     return nb==2
 
+#Lancement du jeu
+#initialisation des grilles joueur et Maitre
+#boucle appelant la fonction tour et vérifiant avec la fonction gagne qui a gagné
+#le changement de joueur est assuré par appel de la fonction suiv
+#retourne si le joueur a réussi l'épreuve
+#si le joueur a réussi l'épreuve il gagne une clef, sinon s'il perd l'épreuve il ne gagne pas de clef
 def jeu_bataille_navale():
     print("Chaque joueur doit placer 2 bateaux sur une grille de 3x3.\nLes bateaux sont représentés par '⛵' et les tirs manqués par '🌊'. \nLes bateaux coulés sont marqués par '💥'.")
     grille_joueur = init()
@@ -123,4 +158,3 @@ def jeu_bataille_navale():
         if not fin :
             joueur = suiv(joueur)
     return joueur == 0
-
