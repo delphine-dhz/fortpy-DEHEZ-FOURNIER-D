@@ -104,11 +104,11 @@ Ce fichier centralise toutes les actions du jeu en utilisant les fonctions des a
 ![test des ko](./TEST/testdesko.png)
 
 - Tests d'intégration sur le jeu
-![test integration](./TEST/Test-1.png)
+![test integration](./TEST/test-1.png)
 ![test integration](./TEST/test-2.png)
-![test integration](./TEST/Test-3.png)
+![test integration](./TEST/test-3.png)
 ![test integration](./TEST/test-4.png)
-![test integration](./TEST/Test-5.png)
+![test integration](./TEST/test-5.png)
 ![test integration](./TEST/test-6.png)
 ![test integration](./TEST/test-7.png)
 ![test integration](./TEST/test-8.png)
