@@ -4,7 +4,7 @@
 - Notre projet est un jeu simulant le célèbre jeu télévisé 'Fort Boyard', mini-jeu réalisé avec une interface homme-machine
 - Le joueur joue contre le 'maitre du jeu' (l'ordinateur) avec un ensemble de mini jeu alliant mathématique,logique,hasard,enigmes utilisant des fichiers Json
 - Pour le réaliser nous avons utilisé le language python avec l'utilisation de PyCharm, les bibliotèques ramdom, Json et winsoud  
-- Vous avez besoin de python 3.9+ et un navigateur internet 
+- Vous avez besoin de python 3.9+ 
 Pour cloner le dépot Git : ```git clone https://github.com/delphine-dhz/fortpy-DEHEZ-FOURNIER-D ```
 --Mettre dans le répertoire DATA les 2 fichiers json : **enigmesPF.json** et **indicesSalle.json**
 
@@ -98,4 +98,6 @@ Ce fichier centralise toutes les actions du jeu en utilisant les fonctions des a
 # Tests et validation
 ### Stratégie de test
 - Tests unitaire pour vérifier le bon fonctionnement des fonctions
+![test estEntier et estDecimal](./TEST/Test-estEntier.png)
+![test estEntier et estDecimal](./TEST/testroulette.png)
 - Tests d'intégration sur le jeu
